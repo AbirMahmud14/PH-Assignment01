@@ -356,27 +356,79 @@ body {
   margin-top:0;
 }
 /* Contact Section */
-.contact {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
+.contact{
+    padding: 70px 0px;
+    display: flex;
 }
-
-.contact input, .contact textarea {
+.contact h1{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+    align-content: center;
+}
+form label{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: left;
+    padding-left: 30px;    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    margin-bottom: 10px;
+}
+form input{
+    height: 50px;
+    width: 500px;
+    padding: 20px 32px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(214, 221, 237, 1);
+}
+form textarea{
+    height: 100px;
+    width: 500px;
+    padding: 20px 32px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(214, 221, 237, 1);
+    resize: none;
+}
+    
+form button{
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.get-in-touch-btn {
-    padding: 12px 30px;
-    background-color: #ff6f61;
+    background-color: #4E47FF;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 20px 32px;
+    border-radius: 10px;
     border: none;
-    color: white;
     cursor: pointer;
-    border-radius: 5px;
+     
+}
+.get-in-touch-btn{
+   background-color: #4E47FF;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 12px 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.get-in-touch-btn a{
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /* Footer Section */
