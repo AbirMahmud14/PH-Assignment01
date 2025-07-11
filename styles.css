@@ -44,6 +44,9 @@ body {
     border-radius: 5px;
 }
 
+.navbar .signup-btn:hover {
+  background-color: purple;
+}
 /* Banner Section */
 .banner {
    
@@ -66,7 +69,9 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-
+.stay-focused-btn:hover {
+  background-color: purple;
+}
 /* Action Section */
 .action {
   
@@ -101,6 +106,9 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+.launch-preview-btn:hover {
+  background-color: purple;
 }
 
 .action-right img {
@@ -347,6 +355,12 @@ body {
     margin-top: 20px;
     margin-bottom:20px;
 }
+
+  .get-started-btn:hover {
+  background-color: purple;
+
+}
+
 .big-img{
   width:70%;
   display: block;
@@ -390,7 +404,7 @@ form input{
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
-    color: rgba(0, 0, 0, 0.5);
+    color: black;
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid rgba(214, 221, 237, 1);
@@ -402,7 +416,7 @@ form textarea{
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
-    color: rgba(0, 0, 0, 0.5);
+    color:black;
     margin-bottom: 20px;
     border-radius: 10px;
     border: 1px solid rgba(214, 221, 237, 1);
@@ -420,8 +434,13 @@ form button{
     border-radius: 10px;
     border: none;
     cursor: pointer;
-     
 }
+
+     form button:hover {
+  background-color: purple;
+
+}
+
 
 .get-in-touch-btn a{
 
@@ -445,7 +464,7 @@ footer{
       
 .footer-title p{
     font-size: 16px;
-    color: rgba(137, 135, 161, 1);
+    color: rgb(89, 88, 102);
     line-height: 150%;
     letter-spacing: 0%;
     margin: 0;
