@@ -74,8 +74,8 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 150px 150px;
-  background-color: #ffffff;
+  padding:  10px 150px 10px 150px;
+  background-color: #f4f7fc;
 }
 .extext{
     color: #252432;
@@ -113,87 +113,213 @@ body {
 }
 
 /* Productive Users Section */
-.productive-users {
-    /* background-color: #f2f3f8;
-    padding: 60px 20px;
-    text-align: center; */
-     background: rgba(78, 71, 255, 0.1);
-  border-radius: 24px;
+
+
+.container {
+    margin: 80px 150px 15px 150px;
+    background: rgba(78, 71, 255, 0.1);
+     border-radius: 24px;
   padding: 50px 80px 50px 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+    
+    text-align: center;
+    box-sizing: border-box;
+    align-content: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.productive-users h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
+.header h1 {
+    font-size: 30px;
+    color:#252432;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.user-cards {
+.stats {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
 }
 
-.card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.stat-item {
+    flex: 1;
+    margin: 0 10px;
 }
 
-.card h3 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.stat-item h2 {
+    font-size: 50px;
+    color: #4E47FF;
+    font-weight: bold;
 }
 
-.card p {
-    font-size: 1.2em;
-    color: #666;
+.stat-p {
+     font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    opacity: 50%;
 }
 
 /* Reviews Section */
-.reviews {
-    padding: 50px 20px;
-    background-color: #f4f7fc;
+.head{
+    padding:50px 0 20px 0;
+    margin: top 20px;
     text-align: center;
+    font-size: bold;
 }
-
-.reviews h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
-
-.review-cards {
+.reviews{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    padding: 20px 10px ;
 }
-
+.review-card,
+.review-card * {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
 .review-card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius:50px;
+  border-style: solid;
+  border-color:#f4f7fc;
+  border-width:30px;
+  
+  padding:50px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--var-sds-size-space-600, 24px);
+  align-items: flex-start;
+  justify-content:space-between;
+
+  min-width: 200px;
+  position: relative;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-100, 4px);
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.star {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
 }
 
-.review-card .rating {
-    font-size: 1.5em;
-    color: #f39c12;
-    margin-bottom: 10px;
+.review-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--var-sds-size-space-200, 8px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  border-radius: 20px;
+  position: relative;
+}
+.text-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-heading2 {
+  color: var(--var-sds-color-text-default-default, #1e1e1e);
+  text-align: left;
+  font-family: var(--heading-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--heading-font-size, 24px);
+  line-height: var(--heading-line-height, 120%);
+  letter-spacing: var(--heading-letter-spacing, -0.02em);
+  font-weight: var(--heading-font-weight, 600);
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text2 {
+  color: var(--var-sds-color-text-default-default, #877e7e);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 14px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  flex: 1;
+}
+.avatar-block {
+  display: flex;
+  flex-direction: row;
+  gap: var(--var-sds-size-space-300, 12px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.avatar {
+  border-radius: var(--var-sds-size-radius-full, 9999px);
+  flex-shrink: 0;
+  width: var(--var-sds-size-icon-large, 40px);
+  height: var(--var-sds-size-icon-large, 40px);
+  position: relative;
+  overflow: hidden;
+}
+.shape {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  object-fit: cover;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.title {
+  color: var(--var-sds-color-text-default-secondary, #757575);
+  text-align: left;
+  font-family: var(--body-strong-font-family, "Inter-SemiBold", sans-serif);
+  font-size: var(--body-strong-font-size, 16px);
+  line-height: var(--body-strong-line-height, 140%);
+  font-weight: var(--body-strong-font-weight, 600);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.description {
+  color: var(--var-sds-color-text-default-tertiary, #b3b3b3);
+  text-align: left;
+  font-family: var(--body-base-font-family, "Inter-Regular", sans-serif);
+  font-size: var(--body-base-font-size, 13px);
+  line-height: var(--body-base-line-height, 140%);
+  font-weight: var(--body-base-font-weight, 400);
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.review-card p {
-    font-size: 1.1em;
-    color: #666;
-}
 
 /* Focus Section */
 .focus {
